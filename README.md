@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/3uC7opE.png" alt="Exo Client" width="800"/>
+  <img src="https://i.imgur.com/IyzLh8q.png" alt="Exo Client" width="800"/>
 </div>
 
 <p align="center">
