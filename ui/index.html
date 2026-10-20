@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' 'unsafe-inline' data: blob: https://velocity.app;" />
+  <title>Exo Client</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <canvas id="rain"></canvas>
+
+  <div class="app">
+    <div class="titlebar">
+      <div class="title-drag">
+        <span class="logo">&#9670;</span>
+        <span class="title-text">EXO CLIENT</span>
+      </div>
+      <div class="win-controls">
+        <button class="wbtn" id="win-min" title="Minimize">&#8211;</button>
+        <button class="wbtn close" id="win-close" title="Close">&#215;</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn" id="btn-execute">Execute</button>
+      <button class="btn" id="btn-clear-console">Clear</button>
+      <button class="btn" id="btn-reload">Reload VM</button>
+      <span class="spacer"></span>
+      <span class="status" id="status-text">&#8212;</span>
+      <button class="btn" id="btn-hub">Hub</button>
+    </div>
+
+    <div class="body">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-head">
+          <span>Hub</span>
+          <span class="side-actions">
+            <button class="mini" id="btn-refresh-scripts" title="Refresh">&#8635;</button>
+            <button class="mini" id="btn-open-folder" title="Open folder">&#9776;</button>
+          </span>
+        </div>
+        <div class="library" id="library"></div>
+        <div class="side-head">
+          <button class="mini" id="btn-save-lib" style="flex:1">Save to Hub</button>
+        </div>
+      </aside>
+
+      <div class="main">
+        <div class="main-head">
+          <span class="file-name" id="file-name">untitled.lua</span>
+          <span class="spacer"></span>
+          <button class="mini" id="btn-new">New</button>
+          <button class="mini" id="btn-open">Open</button>
+          <button class="mini" id="btn-save">Save</button>
+        </div>
+        <div id="editor"></div>
+      </div>
+    </div>
+
+    <section class="console">
+      <div class="console-body" id="console"></div>
+    </section>
+  </div>
+
+  <script src="vs/loader.js"></script>
+  <script src="velocity-api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
