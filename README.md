@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://github.com/potatos1233/Exo-Client">
-    <img src="banner.svg" width="800" alt="EXO CLIENT">
-  </a>
+  <img src="https://i.imgur.com/3uC7opE.png" alt="Exo Client" width="800"/>
 </div>
 
 <p align="center">
